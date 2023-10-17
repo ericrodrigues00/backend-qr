@@ -46,7 +46,7 @@ app.post('/api/ingressos', async (req, res) => {
 
     const numeroAleatorio = Math.floor(Math.random() * 1000000)
     const novoIngresso = new Ingresso({ nome, contato, numero: numeroAleatorio, lido });
-
+    //fepo
     // Salve o ingresso no banco de dados
     await novoIngresso.save();
 
